@@ -12,20 +12,20 @@ return require('packer').startup(function(use)
 	-- colorscheme
 	use 'gruvbox-community/gruvbox'
 
-	-- status line
-	use 'nvim-lualine/lualine.nvim'
-
 	-- treesitter
 	use 'nvim-treesitter/nvim-treesitter'
 
 	-- indentation blanking
 	use 'lukas-reineke/indent-blankline.nvim'
 
-	-- nvim tree
-	use 'nvim-tree/nvim-tree.lua'
-	
 	-- icons
 	use 'nvim-tree/nvim-web-devicons'
+
+	-- status line
+	use 'nvim-lualine/lualine.nvim'
+
+	-- nvim tree
+	use {'nvim-tree/nvim-tree.lua', requires = 'nvim-tree/nvim-web-devicons'}
 
 	-- Git
 	use 'jesseduffield/lazygit'
@@ -35,5 +35,24 @@ return require('packer').startup(function(use)
 
 	-- BUffer line
 	use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+
+	-- autopairs
+	use 'windwp/nvim-autopairs'
+
+	-- cmp plugins
+	use "hrsh7th/nvim-cmp" -- The completion plugin
+	use "hrsh7th/cmp-buffer" -- buffer completions
+	use "hrsh7th/cmp-path" -- path completions
+	use "hrsh7th/cmp-cmdline" -- cmdline completions
+	use "saadparwaiz1/cmp_luasnip" -- snippet completions
+
+	-- Dashboard
+	use {'glepnir/dashboard-nvim', requires = 'nvim-tree/nvim-web-devicons'}
+
+	-- 42 Header
+	use 'vinicius507/header42.nvim'
+
+	-- Git
+	use "lewis6991/gitsigns.nvim"
 
 end)
