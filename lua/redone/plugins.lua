@@ -13,7 +13,7 @@ return require('packer').startup(function(use)
 	use 'gruvbox-community/gruvbox'
 
 	-- treesitter
-	use 'nvim-treesitter/nvim-treesitter'
+	use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
 
 	-- indentation blanking
 	use 'lukas-reineke/indent-blankline.nvim'

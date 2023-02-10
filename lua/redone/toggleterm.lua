@@ -1,7 +1,6 @@
 local status_ok, toggleterm = pcall(require, "toggleterm")
 if not status_ok then
 	print (toggleterm)
-	print ("Some thing is not good i can feel it")
 	return
 end
 
