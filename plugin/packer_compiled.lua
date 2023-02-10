@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/home/redone/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   gruvbox = {
     loaded = true,
     path = "/home/redone/.local/share/nvim/site/pack/packer/start/gruvbox",
@@ -83,6 +88,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/redone/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
+  lazygit = {
+    loaded = true,
+    path = "/home/redone/.local/share/nvim/site/pack/packer/start/lazygit",
+    url = "https://github.com/jesseduffield/lazygit"
   },
   ["lualine.nvim"] = {
     loaded = true,

@@ -27,6 +27,13 @@ return require('packer').startup(function(use)
 	-- icons
 	use 'nvim-tree/nvim-web-devicons'
 
+	-- Git
+	use 'jesseduffield/lazygit'
+
+	-- Terminal
 	use 'akinsho/toggleterm.nvim'
+
+	-- BUffer line
+	use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
 end)
