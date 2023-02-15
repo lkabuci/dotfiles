@@ -6,7 +6,8 @@ require 'core.colorscheme'		-- lua/core/colorscheme
 require 'plugins.bufferline'	--lua/plugins/bufferline
 require 'plugins.lualine'		-- lua/plugins/lualine.lua
 require 'plugins.nvim-tree'		-- lua/plugins/nvim-tree.lua
-require 'plugins.treesitter'	-- lua/plugins/treesitter
+require 'plugins.treesitter'	-- lua/plugins/treesitter.lua
+require 'plugins.dashboard'		-- lua/plugins/dashboard.lua
 
 require 'core.signals'			-- lua/core/signals.lua
 

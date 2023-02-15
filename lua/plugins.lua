@@ -18,13 +18,22 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
+	-- Essensial
+	use 'nvim-lua/plenary.nvim'
+	use {'nvim-telescope/telescope.nvim', tag = '0.1.1'}
+	use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
 
+	-- Apperence
 	use 'nvim-tree/nvim-web-devicons'
+	use 'glepnir/dashboard-nvim'
 	use 'nvim-tree/nvim-tree.lua'
 	use 'nvim-lualine/lualine.nvim'
 	use 'akinsho/bufferline.nvim'
 	use 'ellisonleao/gruvbox.nvim'
 	use 'nvim-treesitter/nvim-treesitter'
+
+	-- Telescope
+	
 
 	if packer_bootstrap then
 		require('packer').sync()
