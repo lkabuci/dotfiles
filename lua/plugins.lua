@@ -1,3 +1,5 @@
+-- https://github.com/wbthomason/packer.nvim
+
 local ensure_packer = function()
 	local fn = vim.fn
 	local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
@@ -22,6 +24,7 @@ return require('packer').startup(function(use)
 	use 'nvim-lualine/lualine.nvim'
 	use 'akinsho/bufferline.nvim'
 	use 'ellisonleao/gruvbox.nvim'
+	use 'nvim-treesitter/nvim-treesitter'
 
 	if packer_bootstrap then
 		require('packer').sync()
