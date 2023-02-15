@@ -71,3 +71,14 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
+-- Plugins Mapping --
+local success, builtin = pcall(require, 'telescope.builtin')
+if not success then
+	print('Error loading telescope.builtin in keymaps.lua')
+	return
+end
+vim.keymap.set('n', '<leader>sf', builtin.find_files, {desc = "[S]earch for [F]iles"})
+vim.keymap.set('n', '<leader>sg', builtin.live_grep, {desc = "[S]earch for [G]reped string"})
+vim.keymap.set('n', '<leader>sb', builtin.buffers, {desc = "[S]earch for [B]uffer"})
+vim.keymap.set('n', '<leader>sh', builtin.help_tags, {desc = "[S]earch for [H]elp tags"})
+

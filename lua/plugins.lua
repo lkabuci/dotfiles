@@ -20,8 +20,6 @@ return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 	-- Essensial
 	use 'nvim-lua/plenary.nvim'
-	use {'nvim-telescope/telescope.nvim', tag = '0.1.1'}
-	use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
 
 	-- Apperence
 	use 'nvim-tree/nvim-web-devicons'
@@ -33,6 +31,9 @@ return require('packer').startup(function(use)
 	use 'nvim-treesitter/nvim-treesitter'
 
 	-- Telescope
+	use {'nvim-telescope/telescope.nvim', tag = '0.1.1'}
+	use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
+	use { "nvim-telescope/telescope-ui-select.nvim" }
 	
 
 	if packer_bootstrap then
