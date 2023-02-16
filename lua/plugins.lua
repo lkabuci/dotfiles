@@ -33,6 +33,7 @@ return require('packer').startup(function(use)
 	-- snippets
 	use 'L3MON4D3/LuaSnip'
 	use 'rafamadriz/friendly-snippets'
+	use 'windwp/nvim-autopairs'
 
 	-- LSP
 	use 'neovim/nvim-lspconfig'
