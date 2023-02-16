@@ -10,6 +10,8 @@ require 'plugins.treesitter'	-- lua/plugins/treesitter.lua
 require 'plugins.dashboard'		-- lua/plugins/dashboard.lua
 require 'plugins.telescope'		-- lua/plugins/telescope.lua
 require 'plugins.whichkey'		-- lua/plugins/whichkey
+require 'plugins.cmp'			-- lua/plugins/cmp.lua
+require 'plugins.lsp'			-- lua/plugins/lsp/
 
 require 'core.signals'			-- lua/core/signals.lua
 
