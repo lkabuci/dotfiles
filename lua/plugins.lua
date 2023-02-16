@@ -22,7 +22,6 @@ return require('packer').startup(function(use)
 	-- Essensial
 	use 'nvim-lua/plenary.nvim'
 
-
 	-- autocomplete
 	use 'hrsh7th/nvim-cmp'
 	use 'hrsh7th/cmp-buffer'
@@ -41,6 +40,9 @@ return require('packer').startup(function(use)
 	use 'williamboman/mason-lspconfig.nvim'
 	use 'jose-elias-alvarez/null-ls.nvim'
 	use 'RRethy/vim-illuminate'
+
+	-- Git
+	use 'lewis6991/gitsigns.nvim'
 
 	-- Apperence
 	use 'nvim-tree/nvim-web-devicons'
