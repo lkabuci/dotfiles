@@ -26,7 +26,7 @@ opt.autoindent = true
 opt.hidden = true									-- switch between buffers without saving them first
 opt.splitright = true								-- new split to the right
 opt.splitbelow = true								-- new split below
-opt.cmdheight = 4									-- more space in the neovim command line for displaying messages
+opt.cmdheight = 1									-- more space in the neovim command line for displaying messages
 
 -- search and highlight
 opt.incsearch = true

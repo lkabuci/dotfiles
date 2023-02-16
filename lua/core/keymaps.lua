@@ -21,6 +21,10 @@ vim.g.maplocalleader = " "
 keymap("n", "<leader>e", ":NvimTreeToggle <CR>", opts)
 keymap("n", "<leader>pv", ":NvimTreeToggle <CR>", opts)
 
+-- Custum
+vim.api.nvim_set_keymap("n", "==", "ggVG=", { noremap = true })
+
+
 -- Normal --
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
