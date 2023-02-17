@@ -14,7 +14,7 @@ require 'plugins.lualine'		-- lua/plugins/lualine.lua
 require 'plugins.nvim-tree'		-- lua/plugins/nvim-tree.lua
 require 'plugins.telescope'		-- lua/plugins/telescope.lua
 require 'plugins.treesitter'	-- lua/plugins/treesitter.lua
-require 'plugins.whichkey'		-- lua/plugins/whichkey
+-- require 'plugins.whichkey'		-- lua/plugins/whichkey
 
 require 'core.signals'			-- lua/core/signals.lua
 
