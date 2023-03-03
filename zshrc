@@ -64,6 +64,8 @@ alias make="make --no-print-directory"
 
 alias vi="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim"
 
+alias cat="bat --plain --wrap=character"
+
 # Paths
 export PATH+="/home/redone/.Personal/scripts/:"
 export PATH+="/home/redone/.Personal/Apps/:"
