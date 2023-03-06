@@ -1,0 +1,50 @@
+function man {
+  # Attempt to get the TLDR page for the given command
+  tldr_page=$(tldr "$1" 2>/dev/null)
+
+  if [[ -n "$tldr_page" ]];
+	command tldr "$1"
+  else
+    command man "$1"
+  fi
+}
+
+alias cat="bat --plain --wrap=character"
+alias ls='clear && lsd'
+alias sl=ls
+alias ks=ls
+alias lss=ls
+alias tree="ls --tree"
+
+alias celar=clear
+alias ckear=clear
+alias vlear=clear
+alias clekar=clear
+alias lcear=clear
+alias cleaer=clear
+alias claer=clear
+alias cealr=clear
+alias cear=clear
+alias celaer=clear
+alias cekar=clear
+alias caelr=clear
+
+alias xxx="nvim ~/.zshrc"
+alias sss="source ~/.zshrc"
+
+alias dea='deactivate'
+alias vi='nvim'
+alias pt=poetry
+
+alias zzz="systemctl suspend"
+alias install="sudo pacman -S"
+alias remove="sudo pacman -Rnscu"
+alias update="flatpak update ; yay"
+
+alias upnote="/home/redone/.Personal/Apps/UpNote.AppImage"
+
+alias open="xdg-open"
+alias make="make --no-print-directory"
+
+alias vi="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim"
+
