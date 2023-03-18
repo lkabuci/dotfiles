@@ -46,6 +46,7 @@ opt.swapfile = false
 opt.writebackup = false								-- if a file is being edited by another program, it is not allowed to be edited
 opt.linebreak = true								-- companion to wrap, don't split words
 
+vim.o.nofixeol = true                               -- remove neovim default newline
 
 opt.iskeyword:append "-"							-- hyphenated words recognized by searches
 opt.runtimepath:remove("/usr/share/vim/vimfiles")	-- separate vim plugins from neovim
