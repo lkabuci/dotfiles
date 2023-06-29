@@ -1,3 +1,50 @@
-set number
-set relativenumber
+set scrolloff=5
 
+" Do incremental searching.
+set incsearch
+set relativenumber
+set number
+
+inoremap jk <Esc>
+
+let mapleader=" "
+
+" Terminal
+map <leader>t <Action>(ActivateTerminalToolWindow)
+map <c-t> <Action>(Terminal.OpenInTerminal)
+
+
+" Files
+map <leader>nc <Action>(CIDR.Lang.Cpp.NewClass)         " New Class
+map <leader>nf <Action>(NewFile)                        " New file
+map <leader>nd <Action>(NewDir)                         " New Directory
+map <leader>ne <Action>(NewElementSamePlace)            " New element in same place
+
+" Navigation
+map <leader>\ <Action>(SplitVertically)
+map <leader>- <Action>(SplitHorizontally)
+map <leader>m <Action>(MoveEditorToOppositeTabGroup)
+sethandler <c-j> a:vim
+sethandler <c-k> a:vim
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
+
+" Tabs
+map <TAB> <Action>(PreviousTab)
+map <s-TAB> <Action>(NextTab)
+
+
+map <leader>z <Action>(ToggleDistractionFreeMode)
+
+
+map <leader><Esc> <Action>(HideAllWindows)
+
+nnoremap <c-f> :action GotoFile<CR>
+" nnoremap <c-t> :action ActivateTerminalToolWindow<CR>
+
+" File Explorer
+set NERDTree
+map <c-e> :NERDTree<CR>
+map <leader>e :NERDTreeClose<CR>
