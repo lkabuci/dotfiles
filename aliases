@@ -1,0 +1,41 @@
+alias :q="exit"
+
+alias bat="bat --plain"
+alias ls='clear && lsd'
+alias sl=ls
+alias ks=ls
+alias lss=ls
+alias tree="ls --tree"
+
+alias celar=clear
+alias ckear=clear
+alias vlear=clear
+alias clekar=clear
+alias lcear=clear
+alias cleaer=clear
+alias claer=clear
+alias cealr=clear
+alias cear=clear
+alias celaer=clear
+alias cekar=clear
+alias caelr=clear
+
+alias fd=fdfind
+alias cpc=wl-copy
+alias cpv=wl-paste
+
+alias xxx="nvim ~/.zshrc"
+alias sss="source ~/.zshrc"
+
+alias dea='deactivate'
+
+alias zzz="systemctl suspend"
+alias update="flatpak update ; sudo snap refresh ; sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y ; sudo apt autoremove -y"
+
+alias lsblk="lsblk | grep -v snap"
+
+alias open="xdg-open"
+alias make="make --no-print-directory"
+
+alias vi="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim"
+
