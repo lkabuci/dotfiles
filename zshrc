@@ -1,5 +1,5 @@
 # Start Zellij by default
-if command -v zellij &> /dev/null && [ -z "$ZELLIJ" ] && [ "$TERM" = "alacritty" ]; then
+if command -v zellij &> /dev/null && [ -z "$ZELLIJ" ] && [ "$ALACRITTY_WINDOW_ID" ]; then
     zellij
 fi
 
@@ -52,11 +52,9 @@ alias dea='deactivate'
 alias pt=poetry
 
 alias zzz="systemctl suspend"
-alias install="sudo pacman -S"
-alias remove="sudo pacman -Rnscu"
-alias update="flatpak update ; yay"
-
-alias upnote="$HOME/.Personal/Apps/UpNote.AppImage"
+alias install="sudo apt install"
+alias remove="sudo apt remove"
+alias update="flatpak update ; sudo apt update && sudo apt upgrade && sudo apt full-upgrade && sudo apt autoremove && sudo snap refresh"
 
 alias open="xdg-open"
 alias make="make --no-print-directory"
@@ -67,7 +65,9 @@ alias ":q"="exit"
 alias ":wq"="exit"
 
 alias cal="cal -m"
-alias bat="bat --plained"
+alias bat="bat --plain"
+
+alias lsblk="lsblk | grep -v snap"
 
 # Paths
 export PATH=$HOME/.Personal/scripts/:$PATH
