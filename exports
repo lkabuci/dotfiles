@@ -1,0 +1,4 @@
+export PATH=$PATH:$HOME/.local/share/nvim/bin/nvim
+export PATH=$PATH:$HOME/.cargo/bin/cargo
+
+

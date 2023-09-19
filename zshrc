@@ -8,6 +8,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Path to your oh-my-zsh installation.
+# ZSH_THEME="robbyrussell"
 export ZSH="$HOME/.oh-my-zsh"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
@@ -52,12 +53,11 @@ alias dea='deactivate'
 alias pt=poetry
 
 alias zzz="systemctl suspend"
-alias install="sudo apt install"
-alias remove="sudo apt remove"
-alias update="flatpak update; sudo apt update; sudo apt upgrade; sudo apt full-upgrade; sudo apt autoremove; sudo snap refresh"
+alias install="sudo aptitude install"
+alias remove="sudo aptitude remove"
+alias update="flatpak update; sudo aptitude update; sudo aptitude upgrade; sudo aptitude full-upgrade; sudo aptitude autoremove; sudo snap refresh"
 
 alias open="xdg-open"
-alias make="make --no-print-directory"
 
 alias vi="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim"
 
@@ -69,24 +69,8 @@ alias bat="bat --plain"
 
 alias lsblk="lsblk | grep -v snap"
 
-alias clip="xclip -selection c"
-
-# Paths
-export PATH=$HOME/.Personal/scripts/:$PATH
-export PATH=$HOME/.Personal/Apps/:$PATH
-
-# Go Paths
-export PATH=$PATH:/usr/local/go/bin
-
-# Language
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-
-export JAVA_HOME="/usr/lib/jvm/java-<version>-openjdk/"
-export CLION_JDK=$JAVA_HOME
+alias clip="wl-copy"
 
 export TERMINAL=alacritty
 export PATH=$HOME/.local/bin/:$PATH
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

@@ -1,0 +1,12 @@
+{
+    "files.autoSave": "afterDelay",
+    "telemetry.telemetryLevel": "off",
+    "editor.fontFamily": "'FiraCode Nerd Font', 'Droid Sans Mono', 'monospace', monospace",
+    "editor.minimap.enabled": false,
+    // Vim
+    "vim.insertModeKeyBindings": [{
+            "before": [ "j", "k" ],
+            "after": [ "<Esc>" ]
+        }
+    ],
+}

@@ -20,10 +20,6 @@ alias celaer=clear
 alias cekar=clear
 alias caelr=clear
 
-alias fd=fdfind
-alias cpc=wl-copy
-alias cpv=wl-paste
-
 alias xxx="nvim ~/.zshrc"
 alias sss="source ~/.zshrc"
 
